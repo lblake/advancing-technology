@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tickets</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
+    <title>Tickets</title>
   </head>
+
   <body>
     <img src="images/hero-symbol.jpg" alt="landing page image" />
     <h1>ADVANCING TECHNOLOGY</h1>
@@ -15,7 +17,25 @@
     <p>Orlando, FL - October 11th, 2020</p>
 
     <h1>Tickets</h1>
-    <br />
-    <a href="index.html" >Back to homepage</a>
+    <form method="post" action="">
+      <label for="name">Name</label>
+      <input type="text" name="name" required>
+      <label for="email">Email</label>
+      <input type="text" name="email" required>
+      <p>
+          <select name="package" id="package-options">
+              <option value="standard">Standard - $149</option>
+              <option value="premium">Premium - $249</option>
+          </select>
+      </p>
+      <p>
+          <h3>Package</h3>
+          <input type="checkbox" name="lodging" value="lodging">Add on lodging - $99<br>
+          <input type="checkbox" name="meals" value="meals">Add on meals - $119<br>
+      </p>
+      <p><input type="submit" value="Submit"></p>
+  </form>
+
+    <a href="index.html">Back to homepage</a>
   </body>
 </html>
